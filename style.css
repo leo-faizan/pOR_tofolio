@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,900&display=swap');
+
+*, *::after, *::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro {
+    background: #D93D3D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider {
+    background: #101010;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  
+  .intro-text {
+    text-align: center;
+    color: #D93D3D;
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+  }
+  
+  .hide {
+    background: #101010;
+    overflow: hidden;
+  }
+  
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+  
+
+body {
+    background: #101010;
+    color: white;
+    height: 100vh;
+}
+
+.hero{
+    display: none;
+}
+
+.mob-texture {
+    display: none;
+}
+
+.mob-resume-texture {
+    display: none;
+}
+
+.texture {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.container {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+}
+
+a {
+    color: white;
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.resume {
+    border: 2px solid #D93D3D;
+    background: transparent;
+    padding: 12px 12px;
+    transition: 150ms ease-in-out;
+}
+
+
+.contact {
+    background: none;
+    border: none;
+    padding: 12px 12px;
+    border-bottom: 2px solid #D93D3D;
+    transition: 150ms ease-in-out;
+}
+
+.resume:hover, .contact:hover  {
+    background: white;
+    color: #D93D3D;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* contact page */
+.contact-texture {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-container {
+    height: 75vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hire {
+    font-size: 1.2em;
+    letter-spacing: 5px;
+}
+
+svg {
+    fill: #D93D3D;
+}
+
+svg:hover {
+    fill: white;
+    cursor: pointer;
+}
+
+.skill-texture {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resume-container {
+    font-size: 1.2em;
+    letter-spacing: 5px;
+    height: 75vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.skills {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.myself{
+    color: #D93D3D;
+    line-height: 2em;
+    width: 46vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero {
+        width: 50vw;
+        display: initial;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+
+    .mob-texture {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .texture {
+        display: none;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .title {
+        width: 100vw;
+        font-size: 3rem;
+    }
+
+    .main {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    .links {
+        flex-direction: column;
+        position: absolute;
+        top: 80%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        width: 40vw;
+        text-align: center;
+        height: 20vh;
+    }
+
+    .contact {
+        border: 2px solid #D93D3D;
+    }
+
+    .skill-texture {
+        display: none;
+    }
+
+    .mob-resume-texture {
+        width: 100%;
+        display: initial;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    .skills {
+        height: 30vh;
+        justify-content: space-between;
+        font-size: 0.8em;
+        width: 70vw;
+    }
+
+    .myself{
+        font-size: 0.8em;
+        line-height: 1.5em;
+        width: 70vw;
+    }
+
+    .mob-hero {
+        display: none;
+    }
+
+    .contact-container {
+        top: 50%;
+        height: 50vh;
+    }
+
+    .media {
+        width: 70vw;
+    }
+
+}
+
